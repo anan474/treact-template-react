@@ -26,6 +26,7 @@ export default () => {
         heading="We are a modern design agency."
         buttonRounded={false}
         primaryButtonText="See Portfolio"
+        description="Apa ya"
         imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
       />
       <MainFeature1
@@ -44,24 +45,25 @@ export default () => {
           {
             imageSrc: SupportIconImage,
             title: "24/7 Support",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            description:
+              "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
           },
           {
             imageSrc: ShieldIconImage,
             title: "Strong Teams",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            description:
+              "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
           },
           {
             imageSrc: CustomerLoveIconImage,
             title: "Customer Satisfaction",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            description:
+              "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
           },
         ]}
         linkText=""
       />
-      <TeamCardGrid 
-        subheading={<Subheading>Our Team</Subheading>}
-      />
+      <TeamCardGrid subheading={<Subheading>Our Team</Subheading>} />
       <Footer />
     </AnimationRevealPage>
   );

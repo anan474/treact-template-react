@@ -14,10 +14,20 @@ import FAQ from "components/faqs/SimpleWithSideImage.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
+import MainFeature1 from "components/features/TwoColWithButton.js";
+const Subheading = tw.span`uppercase tracking-wider text-sm`;
 
 export default () => (
   <AnimationRevealPage>
-    <Hero />
+    {/* <Hero /> */}
+    <MainFeature1
+      subheading={<Subheading>About Treact</Subheading>}
+      heading="We are a modern design agency."
+      buttonRounded={false}
+      primaryButtonText="See Portfolio"
+      description="Apa ya"
+      imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+    />
     <MainFeature />
     <Features />
     <MainFeature2 />
@@ -39,7 +49,7 @@ export default () => (
           quote:
             "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
           customerName: "Charlotte Hale",
-          customerTitle: "CEO, Tesla Inc."
+          customerTitle: "CEO, Tesla Inc.",
         },
         {
           imageSrc:
@@ -49,8 +59,8 @@ export default () => (
           quote:
             "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
           customerName: "Adam Cuppy",
-          customerTitle: "Founder, Nestle"
-        }
+          customerTitle: "Founder, Nestle",
+        },
       ]}
       textOnLeft={true}
     />

@@ -83,13 +83,13 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import Footer from "components/footers/MiniCenteredFooter.js";
 
 /* Ready Made Pages (from demos folder) */
-// import EventLandingPage from "demos/EventLandingPage.js";
-// import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
+import EventLandingPage from "demos/EventLandingPage.js";
+import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
 import AgencyLandingPage from "demos/AgencyLandingPage.js";
 import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
-// import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
+import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
 import ServiceLandingPage from "demos/ServiceLandingPage.js";
-// import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
+import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
 /* Inner Pages */
 // import LoginPage from "pages/Login.js";
@@ -107,6 +107,8 @@ import BlogIndexPage from "pages/BlogIndex.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import Home from "./screens/Home";
+
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
@@ -123,6 +125,9 @@ export default function App() {
         <Route path="/about">
           <AboutUsPage />
         </Route>
+        <Route path="/home_3">
+          <EventLandingPage />
+        </Route>
         <Route path="/home_2">
           <ServiceLandingPage />
         </Route>
@@ -130,7 +135,7 @@ export default function App() {
           <SaaSProductLandingPage />
         </Route>
         <Route path="/">
-          <AgencyLandingPage />
+          <Home />
         </Route>
       </Switch>
     </Router>
